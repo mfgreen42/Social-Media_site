@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import Post from './Components/Post/Post'
-
+import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Post postEntries={posts}/>
-
+      <CreatePostForm />
     </div>
   );
 }
