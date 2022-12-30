@@ -11,7 +11,8 @@ const CreatePostForm = (props) => {
             name: name,
             message: message
         };
-        console.log(newPost)
+        console.log(newPost);
+        props.addNewPostProperty(newPost);
     }
     return ( 
         <form onSubmit={handleSubmit}>
