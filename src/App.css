@@ -19,16 +19,21 @@ header {
     padding: 1em;
 }
 
-.button1 {
-    padding: .5em;
-    font-size: smaller;
-    border-radius: 4px;
-    
+.button {
+    float: right;
+    border: 1px solid black;
 }
 
-.button2 {
-    padding: .5empx;
-    font-size: smaller;
-    border-radius: 4px;
-    
+.button:hover { background-color: gray;}
+
+
+.active-like{
+    background-color: green;
+}
+.active-dislike{
+    background-color: red;
+}
+
+.inactive {
+    background-color: white;
 }

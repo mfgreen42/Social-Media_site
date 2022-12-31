@@ -16,7 +16,7 @@ const CreatePostForm = (props) => {
     }
     return ( 
         <form onSubmit={handleSubmit}>
-            <div className='form-group' width='75%'>
+            <div className='form-group'>
                 <label>Name</label>
                 <input type = 'string' className='form-control' value={name} onChange= {(event) => setName(event.target.value)} />
             </div>
