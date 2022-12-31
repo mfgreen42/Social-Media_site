@@ -16,11 +16,15 @@ const CreatePostForm = (props) => {
     }
     return ( 
         <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type = 'string' value={name} onChange= {(event) => setName(event.target.value)} />
-            <label>Message</label>
-            <input type = 'string' value={message} onChange= {(event) => setMessage(event.target.value)}/>
-            <button type='submit'>Post</button>
+            <div className='form-group' width='75%'>
+                <label>Name</label>
+                <input type = 'string' className='form-control' value={name} onChange= {(event) => setName(event.target.value)} />
+            </div>
+            <div>
+                <label>Message</label>
+                <input type = 'string' className='form-control' value={message} onChange= {(event) => setMessage(event.target.value)}/>
+            </div>
+            <button type='submit' className='btn btn-primary' style={{'margin-top': '1em'}}   >Post</button>
         </form>
      );
 }

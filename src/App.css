@@ -1,10 +1,13 @@
 
 header {
     font-family: 'sans-serif' Arial, Helvetica, Verdana;
+    font-size: x-large;
     background-color: rgb(220, 214, 224);
     padding: 10px;
 
 }
+
+
 
 
 
@@ -14,4 +17,18 @@ header {
     border-color: black;
     margin: 1em;
     padding: 1em;
+}
+
+.button1 {
+    padding: .5em;
+    font-size: smaller;
+    border-radius: 4px;
+    
+}
+
+.button2 {
+    padding: .5empx;
+    font-size: smaller;
+    border-radius: 4px;
+    
 }
