@@ -1,26 +1,27 @@
 
 const Post = (props) => {
-    return (
-        <table>
-        <thead>
+    return ( 
+    <table className="table">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        {props.postEntries.map((post) => {
+        return (
             <tr>
-            <th>Name</th>
-            <th>Message</th>
+            <td>{post.name}</td>
+            <td>{post.message}</td>
             </tr>
-        </thead>
-        <tbody>
-            {props.postEntries.map((post) => {
-                return (
-                    <tr>
-                <td>{post.name}</td>
-                <td>{post.message}</td>
-                </tr>
-            );
+        );
         })}
-        </tbody>
-        </table>
+    </tbody>
+    </table>
 
      );
 }
  
 export default Post;
+

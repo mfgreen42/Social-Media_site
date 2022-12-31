@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import Post from './Components/Post/Post';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import NavBar from './Components/NavBar/NavBar';
+import './App.css';
 
 function App() {
 
-  const [posts, setPosts] = useState([{name: 'Mara Green', message: 'This is the first message to post.'}])
+  const [posts, setPosts] = useState([{name: 'Mara Green', message: 'Welcome to my new Social Media Site!'}])
   
   function addNewPost(post) {
     let tempPost = [post, ...posts];
@@ -14,10 +15,22 @@ function App() {
   }
   
   return (
-    <div>
+    <div className='container-fluid'>
+      <div>
       <NavBar/>
-      <CreatePostForm addNewPostProperty={addNewPost}/>
-      <Post postEntries={posts}/>
+      </div>
+      <div className='row'>
+        <div className='col-md-12'>
+          <div className='border-box'>
+            <CreatePostForm addNewPostProperty={addNewPost}/>
+          </div>
+        </div>
+        <div className='col-md-12'>
+          <div className='border-box'>
+            <Post postEntries={posts}/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

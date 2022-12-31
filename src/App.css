@@ -1,0 +1,17 @@
+
+header {
+    font-family: 'sans-serif' Arial, Helvetica, Verdana;
+    background-color: rgb(220, 214, 224);
+    padding: 10px;
+
+}
+
+
+
+.border-box {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1em;
+    padding: 1em;
+}
