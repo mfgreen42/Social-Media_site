@@ -21,15 +21,19 @@ function App() {
       <NavBar/>
       </div>
       <div className='row'>
-        <div className='col-md-12'>
+        <div className='col-md-6'>
           <div className='border-box'>
-            <CreatePostForm addNewPostProperty={addNewPost}/>
+            <div className='shadow p-3 mb-5 bg-white rounded'>
+              <CreatePostForm addNewPostProperty={addNewPost}/>
+            </div>
           </div>
         </div>
-        <div className='col-md-12'>
+        <div className='col-md-6'>
           <div className='border-box'>
-            <Post postEntries={posts}/>
-            <CustomButton />
+            <div className='shadow p-3 mb-5 bg-white rounded'>
+              <Post postEntries={posts}/>
+              <CustomButton />
+            </div>
           </div>
         </div>
       </div>

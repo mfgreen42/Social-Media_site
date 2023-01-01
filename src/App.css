@@ -23,14 +23,9 @@ header {
     float: right;
     padding: 1em;
 }
-/* .button2 {
-    float: right;
-    padding: 1em;
-} */
-
 
 .active{
-    background-color: rgb(6, 91, 248);
+    background-color: rgb(158, 121, 245);
 }
 
 .inactive {
