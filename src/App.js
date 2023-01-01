@@ -10,7 +10,7 @@ function App() {
 
   const [posts, setPosts] = useState([{name: 'Mara Green', message: 'Welcome to my new Social Media Site!'}])
   
-  function addNewPost(post) {
+  function addNewPost(post,) {
     let tempPost = [post, ...posts];
     setPosts(tempPost);
   }
@@ -29,7 +29,7 @@ function App() {
         <div className='col-md-12'>
           <div className='border-box'>
             <Post postEntries={posts}/>
-            <CustomButton/>
+            <CustomButton />
           </div>
         </div>
       </div>

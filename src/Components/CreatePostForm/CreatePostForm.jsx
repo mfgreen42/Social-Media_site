@@ -4,14 +4,16 @@ import React, { useState } from 'react';
 const CreatePostForm = (props) => {
     const [name, setName]= useState('')
     const [message, setMessage]=useState('')
+   
 
     function handleSubmit(event) {
         event.preventDefault();
         let newPost ={
             name: name,
             message: message
+          
         };
-        console.log(newPost);
+        
         props.addNewPostProperty(newPost);
     }
     return ( 
@@ -24,7 +26,7 @@ const CreatePostForm = (props) => {
                 <label>Message</label>
                 <input type = 'string' className='form-control' value={message} onChange= {(event) => setMessage(event.target.value)}/>
             </div>
-            <button type='submit' className='btn btn-primary' style={{'margin-top': '1em'}}   >Post</button>
+            <button type='submit' className='btn btn-primary' style={{'margin-top': '1em'}}>Post</button>
         </form>
      );
 }
