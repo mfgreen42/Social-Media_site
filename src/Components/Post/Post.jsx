@@ -1,4 +1,4 @@
-
+import CustomButton from "../CustomButton/CustomButton";
 const Post = (props) => {
     return ( 
     <div className="table">
@@ -9,6 +9,8 @@ const Post = (props) => {
                 <div>
                     <p>{post.name}</p>
                     <p>{post.message}</p>
+                    <CustomButton />
+                    <hr></hr>
                 </div>
             </div>
         );

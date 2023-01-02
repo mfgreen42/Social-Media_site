@@ -1,25 +1,35 @@
 import { useState } from "react"
 
 const CustomButton = (props) => {
-    const [buttonClass, setButtonClass]=useState('inactive')
+    const [buttonIsLiked, setButtonIsLiked]=useState('inactive')
+    const [buttonIsDisliked, setButtonIsDisliked]=useState('inactive')
 
-    function handleClick(){
-        if(buttonClass === 'inactive'){
-          
-            setButtonClass('active')
+    function handleIsLiked(){
+        if(buttonIsLiked === 'inactive'){
+            setButtonIsLiked('active')
+            setButtonIsDisliked('inactive')
         }
         else {
-            setButtonClass('inactive')
+            setButtonIsLiked('inactive')
+        }
+    }
+    function handleIsDisliked(){
+        if(buttonIsDisliked === 'inactive'){
+             setButtonIsDisliked('active')
+             setButtonIsLiked('inactive')
+        }
+        else {
+            setButtonIsDisliked('inactive')
         }
     }
     return ( 
     <div>
         <ul>
             <div className="button">
-                <button className={buttonClass} onClick={handleClick}>Like</button>
+                <button className={buttonIsLiked} onClick={handleIsLiked}>Like</button>
             </div>
             <div className="button">
-                <button className={buttonClass} onClick={handleClick}>Dislike</button>
+                <button className={buttonIsDisliked} onClick={handleIsDisliked}>Dislike</button>
             </div>
         </ul>
     </div>

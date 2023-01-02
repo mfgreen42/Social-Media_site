@@ -4,7 +4,6 @@ import Post from './Components/Post/Post';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import NavBar from './Components/NavBar/NavBar';
 import './App.css';
-import CustomButton from './Components/CustomButton/CustomButton';
 
 function App() {
 
@@ -32,7 +31,7 @@ function App() {
           <div className='border-box'>
             <div className='shadow p-3 mb-5 bg-white rounded'>
               <Post postEntries={posts}/>
-              <CustomButton />
+              
             </div>
           </div>
         </div>
